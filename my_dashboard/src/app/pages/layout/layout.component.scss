@@ -1,0 +1,168 @@
+.header-navbar {
+    z-index: 5;
+    position: fixed;
+    width: calc(100vw);
+    box-shadow: 0 0 8px 0 rgb(190, 169, 173), 0 0 10px 0 rgb(190, 169, 173);
+    height: 54px;
+}
+
+.menu-link {
+  cursor: pointer;
+}
+
+.nav-pills .nav-link {
+    border-radius: 0;
+    color: rgb(165, 127, 134);
+    padding: 0.5rem 4rem;
+    justify-content: space-evenly;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: #ffff;
+    border-left: 2px solid rgb(164, 23, 51);
+    color: rgb(164, 23, 51);
+    background-color: #eae0e0;
+    border-radius: 0;
+    padding: 0.5rem 4rem;
+    // transition: ease-in-out all .7s; 
+    // -moz-transition: ease-in-out all .7s;
+    // -webkit-transition: ease-in-out all .7s;
+    transition: background-color .7s; 
+    -moz-transition: background-color .7s;
+    -webkit-transition: ease-in-out all .7s;
+}
+
+
+
+.sidenav-nav {
+    box-shadow: 0px 0px 10px rgb(190, 169, 173);
+    height: 100%;
+    width: calc(20vw);
+    margin-top: 58px;
+    border-radius: 0;
+}
+
+@media (min-width:320px) {
+    .sidenav-nav {
+        width: calc(90vw);
+    }
+
+    .sidenav-container {
+        // width: calc(90vw);
+    }
+  }
+
+  @media (min-width:481px) {
+    .sidenav-nav {
+        width: calc(40vw);
+    }
+
+    .sidenav-container {
+        // width: calc(40vw);
+    }
+  }
+
+  @media (min-width:641px) {
+    .sidenav-nav {
+        width: calc(40vw);
+    }
+
+    .sidenav-container {
+        // width: calc(40vw);
+    }
+  }
+
+  @media (min-width:961px) {
+    .sidenav-nav {
+        width: calc(40vw);
+    }
+
+    .sidenav-container {
+        // width: calc(40vw);
+    }
+  }
+
+  @media (min-width:1025px) {
+    .sidenav-nav {
+        width: calc(30vw);
+    }
+
+    .sidenav-container {
+        // width: calc(30vw);
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .menu-link--icon {
+        display: none;
+        color: rgb(165, 127, 134);
+    }
+    .menu-link--text {
+        display: block;
+        color: rgb(165, 127, 134);
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .menu-link--icon {
+        display: block flex;
+        color: rgb(165, 127, 134);
+    }
+    .menu-link--text {
+        display: none;
+    }
+    // .sidenav-nav {
+    //     display: none;
+    // }
+
+    // .sidenav-container {
+    //     display: none;
+    // }
+  }
+
+
+.content-container {
+    min-height: 100vh;
+}
+.sidenav-container {
+    // height: 100%;
+    border-radius: 0;
+    // width: calc(20vw);
+    overflow-y: hidden;
+}
+
+.router-outlet-container {
+    height:100%;
+    // width: calc(80vw);
+    margin-top: 10%;
+    overflow-y: auto;
+}
+
+.profile-container {
+    display: grid;
+    place-content: center; 
+    height: calc(30vh);
+    .image-container {
+        padding: 3% 10%;
+        img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            align-items: center;
+        }
+    }
+    .name-container {
+        .name {
+            text-align: center;
+        }
+        .designation {
+            text-align: center;
+            color: rgb(165, 127, 134);
+        }
+    }
+    
+}
+
+.container-fluid-content {
+    width: 100%;
+}

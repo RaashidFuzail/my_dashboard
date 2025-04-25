@@ -1,0 +1,66 @@
+<nav class="navbar bg-body-tertiary header-navbar">
+    <div class="container-fluid">
+      <div class="menu-link" (click)="onClickNavigationMenu()">
+        <span class="menu-link--icon">
+          <mat-icon >menu</mat-icon><h5>My Portfolio</h5>
+        </span>
+        <span class="menu-link--text">
+          <h5>My Portfolio</h5>
+        </span>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="row no-gutters content-container d-flex">
+    <div class="d-flex align-items-start sidenav-container col-6 col-md-4 col-lg-3">
+      <div class="nav flex-column nav-pills me-3 sidenav-nav" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <div class="profile-container">
+          <div class="image-container">
+              <img src="assets/profile_picture.jpg" alt="abc.img">
+          </div>
+          <div class="name-container">
+              <div class="name">
+                  Fuzail Raashid
+              </div>
+              <div class="designation">
+                  Frontend Developer
+              </div>
+          </div>
+        </div>
+        <button class="nav-link active d-flex" data-bs-toggle="pill" type="button"
+          role="tab" aria-selected="true"
+          routerLink="/home">
+            <mat-icon aria-hidden="false" fontIcon="dashboard"></mat-icon> 
+            <span class="d-flex">
+              Dashboard
+            </span>
+        </button>
+        <button class="nav-link  d-flex" data-bs-toggle="pill" type="button" role="tab" aria-selected="false"
+        routerLink="/skill-set">
+          <mat-icon>build</mat-icon>
+          <span class="d-flex">
+            Skill Set
+          </span>
+        </button>
+        <button class="nav-link d-flex" data-bs-toggle="pill" type="button" role="tab" aria-selected="false"
+        routerLink="/projects">
+          <mat-icon aria-hidden="false" fontIcon="assessment"></mat-icon>
+          <span class="d-flex">
+           Projects
+          </span>
+        </button>
+        <button class="nav-link d-flex" data-bs-toggle="pill" type="button" role="tab" aria-selected="false"
+        routerLink="/experience">
+          <mat-icon aria-hidden="false" fontIcon="work-history"></mat-icon>
+          <span class="d-flex">
+           Experience
+          </span>
+        </button>
+      </div>
+    </div>
+    <div class="col-6 col-md-8 col-lg-9 router-outlet-container no-gutters mt-10">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  
+  
