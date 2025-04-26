@@ -12,7 +12,7 @@
   </nav>
   
   <div class="row no-gutters content-container d-flex">
-    <div class="d-flex align-items-start sidenav-container col-6 col-md-4 col-lg-3">
+    <div class="d-flex align-items-start sidenav-container col-sm-5 col-xs-6 col-md-4 col-lg-3">
       <div class="nav flex-column nav-pills me-3 sidenav-nav" id="v-pills-tab" role="tablist" aria-orientation="vertical">
         <div class="profile-container">
           <div class="image-container">
@@ -27,12 +27,19 @@
               </div>
           </div>
         </div>
-        <button class="nav-link active d-flex" data-bs-toggle="pill" type="button"
-          role="tab" aria-selected="true"
-          routerLink="/home">
+        <button class="nav-link active d-flex" data-bs-toggle="pill" type="button" role="tab" aria-selected="false"
+        routerLink="/home">
+          <mat-icon aria-hidden="true" fontIcon="work-history"></mat-icon>
+          <span class="d-flex">
+            Dashboard
+          </span>
+        </button>
+        <button class="nav-link  d-flex" data-bs-toggle="pill" type="button"
+          role="tab" aria-selected="false"
+          routerLink="/experience">
             <mat-icon aria-hidden="false" fontIcon="dashboard"></mat-icon> 
             <span class="d-flex">
-              Dashboard
+              Experience
             </span>
         </button>
         <button class="nav-link  d-flex" data-bs-toggle="pill" type="button" role="tab" aria-selected="false"
@@ -49,18 +56,89 @@
            Projects
           </span>
         </button>
-        <button class="nav-link d-flex" data-bs-toggle="pill" type="button" role="tab" aria-selected="false"
-        routerLink="/experience">
-          <mat-icon aria-hidden="false" fontIcon="work-history"></mat-icon>
-          <span class="d-flex">
-           Experience
-          </span>
-        </button>
+
       </div>
     </div>
-    <div class="col-6 col-md-8 col-lg-9 router-outlet-container no-gutters mt-10">
+    <div class="col-sm-7 col-xs-6 col-md-8 col-lg-9 router-outlet-container no-gutters mt-10 mb-10">
       <router-outlet></router-outlet>
     </div>
   </div>
   
   
+
+
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <mat-icon>menu</mat-icon>
+        <h5 class="ms-2 mb-0">My Portfolio</h5>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="/home" aria-current="page">
+              <mat-icon>dashboard</mat-icon> Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/skill-set">
+              <mat-icon>build</mat-icon> Skill Set
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/projects">
+              <mat-icon>assessment</mat-icon> Projects
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/experience">
+              <mat-icon>work_history</mat-icon> Experience
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container-fluid mt-5 pt-5">
+    <div class="row">
+      <div class="col-12 col-md-3">
+        <div class="sidenav bg-light shadow-sm p-3 rounded">
+          <div class="profile text-center mb-3">
+            <img src="assets/profile_picture.jpg" alt="Fuzail Raashid" class="img-fluid rounded-circle mb-2" width="100">
+            <h6 class="fw-bold">Fuzail Raashid</h6>
+            <p class="text-muted">Frontend Developer</p>
+          </div>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" routerLink="/home">
+                <mat-icon>dashboard</mat-icon> Dashboard
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/skill-set">
+                <mat-icon>build</mat-icon> Skill Set
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/projects">
+                <mat-icon>assessment</mat-icon> Projects
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/experience">
+                <mat-icon>work_history</mat-icon> Experience
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-md-9">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+   -->
