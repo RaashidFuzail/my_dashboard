@@ -1,3 +1,5 @@
+@use  '../../../styles.scss' as *;
+
 .header-navbar {
     z-index: 5;
     position: fixed;
@@ -12,15 +14,15 @@
 
 .nav-pills .nav-link {
     border-radius: 0;
-    color: rgb(165, 127, 134);
+    color: $secondary-color;
     padding: 0.5rem 4rem;
     justify-content: space-between;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     background-color: #ffff;
-    border-left: 2px solid rgb(164, 23, 51);
-    color: rgb(164, 23, 51);
+    border-left: 2px solid $primary-color;
+    color: $primary-color;
     background-color: #eae0e0;
     border-radius: 0;
     padding: 0.5rem 4rem;
@@ -96,18 +98,18 @@
   @media screen and (min-width: 992px) {
     .menu-link--icon {
         display: none;
-        color: rgb(165, 127, 134);
+        color: $secondary-color;
     }
     .menu-link--text {
         display: block;
-        color: rgb(165, 127, 134);
+        color: $secondary-color;
     }
   }
 
   @media screen and (max-width: 991px) {
     .menu-link--icon {
         display: block flex;
-        color: rgb(165, 127, 134);
+        color: $secondary-color;
     }
     .menu-link--text {
         display: none;
@@ -158,7 +160,7 @@
         }
         .designation {
             text-align: center;
-            color: rgb(165, 127, 134);
+            color: $secondary-color;
         }
     }
     

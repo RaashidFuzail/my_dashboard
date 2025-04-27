@@ -1,9 +1,11 @@
 import { AfterViewInit, Component, ViewChild, viewChild } from '@angular/core';
-import { Chart } from 'chart.js/auto'
+import { Chart } from 'chart.js/auto';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+
 
 @Component({
   selector: 'app-dashboard',
-  imports: [],
+  imports: [MatProgressBarModule],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss'
 })
@@ -36,22 +38,25 @@ export class DashboardComponent implements AfterViewInit{
       'Html',
       'CSS',
       'Angular',
-      'Bootstrap'
+      'Bootstrap',
+      'Git'
     ],
     datasets: [{
       label: 'Technologies Ratings',
-      data: [7.5, 7.5, 7, 7],
+      data: [7.5, 7.5, 7, 7, 6],
       backgroundColor: [
         'rgba(75, 192, 192, 0.2)',
-        'rgba(54, 162, 235, 0.2)',
+        'rgb(80, 233, 145, 0.2)',
         'rgba(153, 102, 255, 0.2)',
-        'rgba(201, 203, 207, 0.2)'
+        'rgba(201, 203, 207, 0.2)',
+        'rgba(253, 127, 111, 0.2)'
       ],
       borderColor: [
         'rgb(75, 192, 192)',
-        'rgb(54, 162, 235)',
+        'rgb(80, 233, 145)',
         'rgb(153, 102, 255)',
-        'rgb(201, 203, 207)'
+        'rgb(201, 203, 207)',
+        'rgb(253, 127, 111)'
       ],
       borderWidth: 1
     }]

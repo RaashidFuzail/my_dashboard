@@ -1,1 +1,19 @@
-experience shown here
+<div class="container-fluid">
+    <div class="row mt-4">
+        <div class="col-xxl-4" *ngFor="let item of experiences; let i be index">
+            <div class="card border-0"   >
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="{{item.image}}" alt="abc.img">
+                    <p>{{ item.tenureFromMonth }} {{ item.tenureFromYear }} - {{ item.tenureToMonth }} {{ item.tenureToYear }}</p>
+                  </div>
+                  <div class="card-back">
+                    <h4>{{ item.designation | titlecase  }} | <h5>{{ item.role | titlecase  }}</h5></h4>
+                    <h6> {{ item.level | titlecase  }} </h6>
+                    <span><p >Click for more details<mat-icon class="visibility-icon" (click)="openDialog(item.company, item.responsibilities)">visibility</mat-icon></p></span>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
