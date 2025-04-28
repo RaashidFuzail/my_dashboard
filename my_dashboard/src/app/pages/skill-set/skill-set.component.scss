@@ -1,0 +1,11 @@
+@use '../../../styles.scss' as *;
+
+img {
+    height: 50px; 
+    width: 50px;
+}
+
+mat-panel-title {
+    font-size: $font-size-primary;
+    color: $primary-color;
+}

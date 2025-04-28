@@ -1,0 +1,26 @@
+@use '../../../styles.scss' as *;
+
+.card {
+    // background-color: $secondary-color;
+    border: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  .carouselExampleDark {
+    width: 50%;
+    color: $quaternary-color;
+    h6 {
+        font-weight: $font-weight-secondary;
+    }
+  }
+  
+  .profile-files {
+    img {
+        height: 45px;
+        width: 35px;
+    }
+  }
+
+  .carousel-inner-header {
+    color: $tertiary-color;
+  }

@@ -14,24 +14,24 @@
 
 .nav-pills .nav-link {
     border-radius: 0;
-    color: $secondary-color;
+    color: $tertiary-color;
     padding: 0.5rem 4rem;
     justify-content: space-between;
+    background-color: #ffff;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-    background-color: #ffff;
-    border-left: 2px solid $primary-color;
+    background-color: $secondary-color;
+    border-left: 4px solid $primary-color;
     color: $primary-color;
-    background-color: #eae0e0;
     border-radius: 0;
     padding: 0.5rem 4rem;
     // transition: ease-in-out all .7s; 
     // -moz-transition: ease-in-out all .7s;
     // -webkit-transition: ease-in-out all .7s;
-    transition: background-color .7s; 
-    -moz-transition: background-color .7s;
-    -webkit-transition: ease-in-out all .7s;
+    transition: background-color .6s; 
+    -moz-transition: background-color .6s;
+    -webkit-transition: ease-in-out all .6s;
 }
 
 

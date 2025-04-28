@@ -4,6 +4,19 @@ html, body { height: 100%; overflow-x: hidden; margin: 0;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 $primary-color: rgb(164, 23, 51);
-$secondary-color: rgb(165, 127, 134);
-$tertiary-color: rgb(73, 72, 73);
+$secondary-color: rgb(219, 202, 204);
+$tertiary-color: rgb(161, 161, 161);
 $quaternary-color: rgb(43, 38, 39);
+
+$link-visited-color: rgb(154, 1, 154);
+
+
+$font-size-primary: 14px;
+
+$font-weight-primary: 600;
+$font-weight-secondary: 500;
+$font-weight-tertiary: 400;
+
+#projects-stepper .mat-vertical-stepper-header .mat-step-icon {
+    background-color: $secondary-color;
+}

@@ -1,1 +1,14 @@
-<p>skill-set works!</p>
+<mat-accordion>
+    <mat-expansion-panel *ngFor="let skill of skillsData">
+      <mat-expansion-panel-header collapsedHeight="100px" expandedHeight="100px">
+        <mat-panel-title class="p-4">
+            <img src="{{skill.image}}" alt="abc.img"> {{skill.skillName}} | {{skill.relativeExperience}} years
+        </mat-panel-title>
+        
+        <mat-panel-description>
+           
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      {{skill.desc}}
+    </mat-expansion-panel>
+  </mat-accordion>
