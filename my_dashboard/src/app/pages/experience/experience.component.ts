@@ -2,17 +2,10 @@ import { ChangeDetectionStrategy, Component, inject, model, OnInit, signal } fro
 import {MatIcon} from '@angular/material/icon';
 import { data } from '../../shared/experience-data';
 import { CommonModule } from '@angular/common';
-import {MatDialogModule} from '@angular/material/dialog';
 import {FormsModule} from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
 import {
-  MAT_DIALOG_DATA,
-  MatDialog,
-  MatDialogActions,
-  MatDialogClose,
-  MatDialogContent,
-  MatDialogRef,
-  MatDialogTitle,
+  MatDialog
 } from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
