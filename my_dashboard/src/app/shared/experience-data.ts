@@ -74,7 +74,7 @@ export const data: any = [
         },
         
         {
-            responsibility: '•	Used Typescript, Bootstrap 4, HTML, CSS, d3 charts to create Web Application templates'
+            responsibility: 'Used Typescript, Bootstrap 4, HTML, CSS, d3 charts to create Web Application templates'
         }
     ]
 },
