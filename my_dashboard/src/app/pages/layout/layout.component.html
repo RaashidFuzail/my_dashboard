@@ -27,43 +27,52 @@
               </div>
           </div>
         </div>
-        <button class="nav-link active d-flex" data-bs-toggle="pill" type="button" role="tab" aria-selected="true"
-        routerLink="/home">
-        <mat-icon aria-hidden="true" fontIcon="dashboard"></mat-icon> 
-          <span class="d-flex">
-            Dashboard
-          </span>
-        </button>
-        <button class="nav-link  d-flex" data-bs-toggle="pill" type="button"
-          role="tab" aria-selected="false"
-          routerLink="/experience">
-           
-            <mat-icon aria-hidden="true" fontIcon="work-history"></mat-icon>
-            <span class="d-flex">
-              Experience
-            </span>
-        </button>
-        <button class="nav-link  d-flex" data-bs-toggle="pill" type="button" role="tab" aria-selected="false"
-        routerLink="/skill-set">
-          <mat-icon>build</mat-icon>
-          <span class="d-flex">
-            Skill Set
-          </span>
-        </button>
-        <button class="nav-link d-flex" data-bs-toggle="pill" type="button" role="tab" aria-selected="false"
-        routerLink="/projects">
-          <mat-icon aria-hidden="false" fontIcon="assessment"></mat-icon>
-          <span class="d-flex">
-           Projects
-          </span>
-        </button>
-        <button class="nav-link d-flex" data-bs-toggle="pill" type="button" role="tab" aria-selected="false"
-        routerLink="/about-me">
-          <mat-icon aria-hidden="false" fontIcon="person"></mat-icon>
-          <span class="d-flex">
-           About Me
-          </span>
-        </button>
+        <button
+        class="nav-link d-flex"
+        routerLink="/home"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        type="button"
+      >
+        <mat-icon aria-hidden="true" fontIcon="dashboard"></mat-icon>
+        <span class="d-flex">Dashboard</span>
+      </button>
+      <button
+        class="nav-link d-flex"
+        routerLink="/experience"
+        routerLinkActive="active"
+        type="button"
+      >
+        <mat-icon aria-hidden="true" fontIcon="work-history"></mat-icon>
+        <span class="d-flex">Experience</span>
+      </button>
+      <button
+        class="nav-link d-flex"
+        routerLink="/skill-set"
+        routerLinkActive="active"
+        type="button"
+      >
+        <mat-icon>build</mat-icon>
+        <span class="d-flex">Skill Set</span>
+      </button>
+      <button
+        class="nav-link d-flex"
+        routerLink="/projects"
+        routerLinkActive="active"
+        type="button"
+      >
+        <mat-icon aria-hidden="false" fontIcon="assessment"></mat-icon>
+        <span class="d-flex">Projects</span>
+      </button>
+      <button
+        class="nav-link d-flex"
+        routerLink="/about-me"
+        routerLinkActive="active"
+        type="button"
+      >
+        <mat-icon aria-hidden="false" fontIcon="person"></mat-icon>
+        <span class="d-flex">About Me</span>
+      </button>
 
       </div>
     </div>
